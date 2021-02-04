@@ -7,5 +7,5 @@ app_name = 'basket'
 urlpatterns = [
     path('basket-add/<int:product_id>/', basket_add, name='basket_add'),
     path('basket-remove/<int:id>/', basket_remove, name='basket_remove'),
-    path('basket-edit/<int:id>/<int:quantity>/', basket_edit, name='basket_edit'),
+    path('edit/<int:id>/<int:quantity>/', basket_edit, name='basket_edit'),
 ]

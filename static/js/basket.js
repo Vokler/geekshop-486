@@ -4,7 +4,7 @@ window.onload = function () {
         console.log(t_href.name);  // ID корзины
         console.log(t_href.value); // кол-во товаров
         $.ajax({
-            url: "/baskets/basket-edit/" + t_href.name + "/" + t_href.value + "/",
+            url: "/baskets/edit/" + t_href.name + "/" + t_href.value + "/",
             success: function (data) {
                 $('.basket_list').html(data.result);
             }
