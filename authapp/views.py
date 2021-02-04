@@ -6,6 +6,7 @@ from django.contrib import messages
 from authapp.forms import UserLoginForm, UserRegisterForm, UserProfileForm
 from basket.models import Basket
 
+
 def login(request):
     if request.method == 'POST':
         form = UserLoginForm(data=request.POST)
